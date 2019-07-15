@@ -1,0 +1,15 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using UmbracoWebApplicationHOC.Models
+@{
+    Layout = "master.cshtml";
+}
+
+@* the fun starts here *@
+    <dialog class="min-dialog" style="margin:auto; border-radius:15px;" open>
+        <h1 style="text-align:center; color:#5c245f;">Sign Up</h1>
+        @{ Html.RenderPartial("~/Views/Partials/RegisterPartials.cshtml", new RegisterModel());}
+        <br />
+        <div style="width:100%; background-color:0;text-align:center; margin:auto; margin-top: 45px;">
+            <a style="color:white;text-decoration:none; font-size:20px; " href="https://localhost:44312/login">Sign In</a>
+        </div>
+    </dialog>

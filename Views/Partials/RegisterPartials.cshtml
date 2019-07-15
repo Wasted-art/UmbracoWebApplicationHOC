@@ -1,0 +1,40 @@
+﻿@using UmbracoWebApplicationHOC.Controllers
+@model UmbracoWebApplicationHOC.Models.RegisterModel
+
+@using (Html.BeginUmbracoForm<RegisterController>("Register"))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <!--RigisterForm-->
+    <!--Name-->
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Name)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Name)
+        @Html.ValidationMessageFor(model => model.Name)
+    </div>
+
+    <!--Email-->
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Email)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Email)
+        @Html.ValidationMessageFor(model => model.Email)
+    </div>
+
+    <!--Password-->
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Password)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Password)
+        @Html.ValidationMessageFor(model => model.Password)
+    </div>
+
+
+    <div class="min-wrapper">
+        <button class="min-button" name="login" type="submit">Sign Up</button>
+    </div>
+}

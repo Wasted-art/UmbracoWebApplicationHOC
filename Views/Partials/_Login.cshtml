@@ -1,0 +1,35 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<UmbracoWebApplicationHOC.Models.LoginModel>
+@using Umbraco.Web
+
+
+@if (!Umbraco.MemberIsLoggedOn())
+{
+    using (Html.BeginUmbracoForm("SubmitLogin", "Member", System.Web.Mvc.FormMethod.Post, new { id = "login" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary()
+        @Html.LabelFor(m => m.Username)
+        <br />
+        @Html.TextBoxFor(m => m.Username, new { placeholder = "" })
+        <br />
+        <br />
+        @Html.LabelFor(m => m.Password)
+        <br />
+        @Html.PasswordFor(m => m.Password, new { placeholder = "" })
+
+        <br />
+        <br />
+        <div class="min-wrapper">
+            <p style="color: #ab97ab;">Remember me</p>
+            <input type="checkbox" value="Remember me">
+        </div>
+        <div class="min-wrapper">
+            <button class="min-button" name="login" type="submit">Sign In</button>
+        </div>
+    }
+}
+else
+{
+    Html.RenderAction("RenderLogout", "Member");
+}
+

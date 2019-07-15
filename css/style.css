@@ -1,0 +1,205 @@
+﻿body {
+    width: 100%;
+    margin: 0;
+}
+
+/* Header */
+.header-container {
+    width: 100%;
+    height: 973px;
+    background-image: url('../Media/tnlhmtzt/header-graphics.png');
+    background-size: 100% 100%;
+}
+
+
+.footer-container {
+    width: 100%;
+    height: 467px;
+    background-image: url('../Media/s1ahbaa5/footer-graphics.png');
+    background-size: 100% 100%;
+}
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+/* This is my CSS code, not responsiv yet. */
+
+/*Header and navigation*/
+.min-div {
+    height: 973px;
+    background-color: 0;
+    margin-top: 0px;
+    background-image: url('../Media/cj2j0ov5/header-graphics.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.min-nav {
+    background-color: 0;
+    float: right;
+    margin: 40px 10px 40px 10px;
+    padding: 10px 50px 10px 10px;
+}
+
+.min-link {
+    font-size: 20px;
+    text-decoration: none;
+    margin: 15px;
+    color: white;
+    background-color: 0;
+    padding: 10px;
+}
+
+.min-link:hover {
+    text-decoration: none;
+    margin: 15px;
+    color: yellow;
+    background-color: 0;
+    padding: 10px;
+}
+
+.min-link:active {
+     margin: 15px;
+     color: purple;
+     background-color: 0;
+     padding: 10px;
+}
+
+/*Footer*/
+.min-footer {
+    height: 447px;
+    background-color: 0;
+    font-size: 24px;
+    color: #996699;
+    margin-bottom: 0px;
+    background-image: url('../Media/hsljmkaa/footer-graphics.png');
+    background-repeat: no-repeat;
+}
+
+.min-container {
+    background-color: yellow;
+}
+
+
+
+.min-footer-div {
+    background-color: 0;
+    text-align: left;
+    margin-left: 60px;
+    padding-top: 70px;
+    line-height: 3;
+}
+
+/*Product List*/
+.producter {
+    padding: 10px 15px;
+    margin-top:0px;
+}
+/*Sign In and Sign Up*/
+.min-dialog {
+    height: 600px;
+    width: 55%;
+    font-size: 20px;
+    color: white;
+    font-family: Open Sans;
+    margin-top: 15px;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    z-index: 100;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button {
+    margin:auto;
+}
+
+.form-text {
+    color: #ab97ab;
+}
+
+#login {
+    background-color: white;
+}
+
+label {
+    color: #ab97ab;
+}
+#login ul li {
+    color: #ab97ab;
+}
+
+span {
+    color: #ab97ab;
+}
+
+strong {
+    color: #ab97ab;
+}
+
+#logout > button {
+    width: 30%;
+    position: center;
+    color: white;
+    background-color: #e6dce6;
+    padding: 20px;
+    border-radius: 100px;
+    font-size: 24px;
+}
+
+    #logout > button > span {
+    color:white;
+    }
+
+    #Username {
+        width: 92%;
+        margin: 10px 0px;
+        background-color: #f5eff5;
+        border-radius: 20px;
+        padding: 30px 20px;
+        color: #ab97ab;
+    }
+
+#Password {
+    width: 92%;
+    margin: 10px 0px;
+    background-color: #f5eff5;
+    border-radius: 20px;
+    padding: 30px 20px;
+    color: #ab97ab;
+}
+
+#Name 
+{
+    width: 92%;
+    margin: 10px 0px;
+    background-color: #f5eff5;
+    border-radius: 20px;
+    padding: 30px 20px;
+    color: #ab97ab;
+}
+
+#Email {
+    width: 92%;
+    margin: 10px 0px;
+    background-color: #f5eff5;
+    border-radius: 20px;
+    padding: 30px 20px;
+    color: #ab97ab;
+}
+
+.min-wrapper {
+    text-align: center;
+    background-color: 0;
+    margin: 10px 0px;
+}
+
+.min-button {
+    width: 30%;
+    position: center;
+    color: white;
+    background-color: #e6dce6;
+    padding: 20px;
+    border-radius: 100px;
+    font-size:24px;
+}
